@@ -1,0 +1,8 @@
+ssh-keygen -t rsa -b 4096 -C "nic.nrs@gmail.com"
+
+eval "$(ssh-agent -s)"
+
+cat ~/.ssh/id_rsa.pub
+	(then copy the content)
+
+copy and paste the ssh key on github/gitlab by navigating into profile -> setting -> ssh and gpa key
